@@ -30,4 +30,5 @@ func datatype() {
 	var name string
 	name = "Preethikha"
 	fmt.Println("Hi", name)
+
 }
