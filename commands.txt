@@ -17,3 +17,30 @@ to export the function all the functions first letter to be capital.
 #Variable declataion 
 
 var <variable_name> <type> = <value>
+
+
+#functions
+
+function usages:
+Generic usage
+Function as Type
+Function as Values
+
+Function as Type
+https://golangbyexample.com/function-golang-complete-guide/
+s := &square{side: 2}
+shape.getType(), shape.area()
+
+type shape interface {
+    area() int
+    getType() string
+}
+type rectangle struct {
+    length int
+    breath int
+}
+func (r *rectangle) area() int {
+    return r.length * r.breath
+}
+
+

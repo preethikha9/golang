@@ -27,8 +27,7 @@ func datatype() {
 	fmt.Println(num11, num22)
 	fmt.Println(num111, num222)
 
-	var name string
-	name = "Preethikha"
+	var name string = "Preethikha"
 	fmt.Println("Hi", name)
 
 }
