@@ -1,0 +1,19 @@
+# creating a go module 
+
+go mod init golang_practice
+
+
+if the code is split into multiple function but they are under the same package like main 
+then they act as a single file
+but run the code as "go run ." as it should consider all the files in the folder 
+
+
+if we want to create multiple packages 
+combine all the code to the package in single folder 
+import the package in the import statment "packagename modulename/foldername"
+
+to export the function all the functions first letter to be capital. 
+
+#Variable declataion 
+
+var <variable_name> <type> = <value>
