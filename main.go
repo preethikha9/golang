@@ -17,5 +17,18 @@ func main() {
 
 	//variable declaration
 	datatype()
+	loop()
+	understand_defer()
 
+	//go routine
+	fmt.Println("\n\ngoroutine Hands- on")
+	fmt.Println("-------------------------")
+	go_thread()
+
+	//channel
+	fmt.Println("\n\n channel Hands- on")
+	fmt.Println("-------------------------")
+	channel()
+
+	error_msg()
 }

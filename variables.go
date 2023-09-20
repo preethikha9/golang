@@ -31,3 +31,34 @@ func datatype() {
 	fmt.Println("Hi", name)
 
 }
+
+func loop() {
+	fmt.Println("\n\nloop")
+	fmt.Println("-------------------------")
+	for i := 1; i < 5; i++ {
+		fmt.Println(i)
+		if i == 3 {
+			break
+		}
+	}
+	fmt.Println("\nRange")
+	words := []string{"word1", "word2"}
+	for _, val := range words {
+		fmt.Println(val)
+	}
+
+}
+
+func understand_defer() {
+	defer fmt.Println("defer executes when the function comms to end")
+	fmt.Println("Main")
+	value := test()
+	fmt.Println(value)
+
+}
+
+func test() (size int) {
+	defer func() { size = 20 }()
+	size = 30
+	return
+}
